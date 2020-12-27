@@ -5,14 +5,14 @@
 (defn tube
   [diameter height thickness]
   (difference
-    (cylinder (/ diameter 2) height)
-    (cylinder (- (/ diameter 2) thickness) (+ height 1)))
+    (cylinder (+ (/ diameter 2) (/ thickness 2))  height)
+    (cylinder (/ diameter 2) (+ height 1)))
   )
 
 (defn tri
   [diameter thickness]
   (->>
-    (polygon [[0 0] [0 (- (/ thickness 2))] [(/ thickness 2) 0]])
+    (polygon [[0 0] [0 (- thickness)] [thickness 0]])
     (translate [(/ diameter 2) 0 0])
     (extrude-rotate)))
 
@@ -25,7 +25,7 @@
     (->>
       (tube d2 height2 thickness)
       (translate [0 0 (/ height2 2)]))
-    (tri d1 thickness)))
+    (tri d1 (+ (/ thickness 2) (/ (- d2 d1) 2)))))
 
 (spit "scadtest.scad",
-      (write-scad (with-fn 100 (adapter 5 10 6 10 1))))
+      (write-scad (with-fn 100 (adapter 37.8 30.0 45 30.0 3.0))))

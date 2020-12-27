@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dewault-to-ryobi-miter",
+    "from": 45,
+    "to": 37.8,
+    "thickness": 3
+  },
+  {
+    "name": "dewault-to-bosch-sander",
+    "from": 45,
+    "to": 29.5,
+    "thickness": 3
+  }
+]
