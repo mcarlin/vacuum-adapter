@@ -1,3 +1,5 @@
 {:deps
- {scad-clj {:mvn/version "0.5.3"}}
+ {scad-clj {:mvn/version "0.5.3"}
+  cli-matic/cli-matic {:mvn/version "0.4.3"}
+  cheshire/cheshire {:mvn/version "5.10.0"}}
  }
