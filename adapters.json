@@ -1,14 +1,18 @@
 [
   {
     "name": "dewault-to-ryobi-miter",
-    "from": 45,
-    "to": 37.8,
+    "from-dia": 45,
+    "from-len": 30,
+    "to-dia": 37.8,
+    "to-len": 30,
     "thickness": 3
   },
   {
     "name": "dewault-to-bosch-sander",
-    "from": 45,
-    "to": 29.5,
-    "thickness": 3
+    "from-dia": 45,
+    "from-len": 30,
+    "to-dia": 29,
+    "to-len": 30,
+    "thickness": 5
   }
 ]
