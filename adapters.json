@@ -14,5 +14,13 @@
     "to-dia": 29,
     "to-len": 30,
     "thickness": 5
+  },
+  {
+    "name": "dewault-to-ridgid-tablesaw",
+    "from-dia": 63.5,
+    "from-len": 32,
+    "to-dia": 45,
+    "to-len": 30,
+    "thickness": 5
   }
 ]
